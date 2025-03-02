@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: GT-America-Mono-Regular;
+    font-style: normal;
+    font-weight: 200 700;
+    src: url("./public/fonts/67950f383a1878801075666e_GT-America-Mono-Regular.ttf") format("ttf");
+  }
+
+@font-face{
+    font-family: GT-America-Mono-Medium;
+    font-style: normal;
+    font-weight: 200 700;
+    src: url("./public/fonts/67950f385d9720d359d25c55_GT-America-Mono-Medium.ttf") format("ttf");
+}
