@@ -10,7 +10,7 @@ export const BackgroundLines = ({
 }) => {
   return (
     (<div
-      className={cn("h-screen w-full bg-white dark:bg-black", className)}>
+      className={cn("h-screen w-full absolute top-0 left-0 z-[-1000] bg-white dark:bg-black", className)}>
       <SVG svgOptions={svgOptions} />
       <h2 className="bg-clip-text  text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-xl sm:text-2xl md:text-4xl lg:text-7xl py-2 sm:py-4 md:py-10 relative z-20 font-bold tracking-tight">
         Mohd Suleman, <br /> A Full-Stack Developer.
