@@ -1,6 +1,7 @@
 import React from 'react'
 import { BackgroundLines } from './components/ui/background-lines'
 import AboutCard from './components/AboutCard'
+import ContactCard from './components/ContactCard'
 
 
 
@@ -12,7 +13,8 @@ function App() {
     </BackgroundLines>
 
     <AboutCard></AboutCard>
-
+    <ContactCard></ContactCard>
+    
     <div className="work-card absolute top-100">
     <p className='font-bold text-lg'>Recent Works</p>
     <img className='h-50 w-68 mt-2 hover:scale-96 transition-scale scale-100 cursor-pointer duration-700 rounded-xl object-cover' src="src\assets\work-img.jpg" alt="work image" />

@@ -6,7 +6,7 @@ const AboutCard = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="absolute top-26 right-10 w-80 p-6 rounded-2xl backdrop-blur-xs bg-black/20 border border-gray-700/30"
+      className="absolute top-26 hidden right-10 w-80 p-6 rounded-2xl backdrop-blur-xs bg-black/20 border border-gray-700/30"
     >
       <div className="space-y-4">
         <h2 className="text-3xl font-bold ">About Me</h2>
