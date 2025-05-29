@@ -1,12 +1,29 @@
-# React + Vite
+# Portfolio
+[![Live Portfolio](https://img.shields.io/badge/Live%20Site-Visit-green?style=for-the-badge&logo=google-chrome)](https://your-portfolio-live-link.com)
+Welcome to my portfolio! This repository showcases my web development projects, skills, and experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Projects
 
-Currently, two official plugins are available:
+- **Project 1:** Brief description and technologies used.
+- **Project 2:** Brief description and technologies used.
+- **Project 3:** Brief description and technologies used.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Skills
 
-## Expanding the ESLint configuration
+- HTML, CSS, JavaScript
+- React, Node.js
+- Git & GitHub
+- Responsive Design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📄 About Me
+
+I'm a passionate web developer focused on building modern, responsive, and user-friendly web applications.
+
+## 📫 Contact
+
+- **Email:** suleman.techworks@gmail.com
+- **LinkedIn:** [Your LinkedIn](https://linkedin.com/in/yourprofile)
+
+---
+
+Feel free to explore my projects and reach out!
