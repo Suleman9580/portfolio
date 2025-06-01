@@ -12,6 +12,9 @@ function Navbar() {
         },
         {
             title: 'Resume', href: '/resume'
+        },
+        {
+            title: "Skills", href: '/skills'
         }
     ]
 
