@@ -2,7 +2,7 @@ import React from 'react'
 import Marquee from 'react-fast-marquee'
 
 
-function Skills() {
+function Technologies() {
 
   const data = [
     {
@@ -62,13 +62,13 @@ function Skills() {
 
 
   return (
-    <div className="w-full bg-black min-h-screen">
-        <p className='text-6xl font-bold text-center mb-20'>Skills That I Acquire <br /> Over Time</p>
+      <div className="p-20 ">
+        <p className='text-6xl font-bold text-center mb-20'>Technologies That I Master <br /> Over Time</p>
         <div className=' [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]'>
-          <Marquee speed={30} pauseOnHover={true} >
+          <Marquee speed={30}  pauseOnHover={true} >
           <div className="flex  gap-20 ml-20 ">
           {data.map((skill, index) => (
-            <SkillCard key={index} icon={skill.icon} title={skill.title}  />
+            <TechnologiesCard key={index} icon={skill.icon} title={skill.title}  />
           ))}
         </div>
         </Marquee>
@@ -77,7 +77,7 @@ function Skills() {
   )
 }
 
-const SkillCard = ({ title, icon }) => (
+const TechnologiesCard = ({ title, icon }) => (
   <div className="flex justify-center items-center gap-4 relative">
     <img src={icon} alt={title} className="w-20 h-20  grayscale" />
     <h3 className="text-5xl text-neutral-600 tracking-wider font-bold">{title}</h3>
@@ -88,4 +88,4 @@ const SkillCard = ({ title, icon }) => (
 
 
 
-export default Skills
+export default Technologies

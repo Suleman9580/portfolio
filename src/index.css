@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+
+a {
+    color: rgb(120, 120, 120);
+}
+a:hover {
+    color: rgb(212 212 212);
+    transition: all 0.2s ease-in-out;
+}
+
