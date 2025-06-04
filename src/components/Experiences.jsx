@@ -1,4 +1,6 @@
 import React from 'react'
+import { motion } from 'motion/react'
+
 
 function Experiences() {
     const data = [
@@ -23,12 +25,20 @@ function Experiences() {
     ]
   return (
     <div className=' p-20'>
-      <h2 className="text-6xl font-bold text-center mb-10 ">Industry Experiences</h2>
-      <div className="p-4 flex gap-4 flex-col">
+      <motion.h2
+      initial={{ opacity: 0, x: -40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      className="text-6xl font-bold text-center mb-10 ">Industry Experiences</motion.h2>
+      <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      className="p-4 flex gap-4 flex-col">
         {data.map((exp, index) => (
           <ExperienceCard key={index} role={exp.role} company={exp.company} description={exp.description} duration={exp.duration} />
         ))}
-      </div>
+      </motion.div>
     </div>
   )
 }

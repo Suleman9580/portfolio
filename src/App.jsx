@@ -5,31 +5,60 @@ import Technologies from './components/Technologies'
 import Projects from './components/Projects'
 import Experiences from './components/Experiences'
 import Footer from './components/Footer'
+import { motion } from 'motion/react'
+
 
 
 
 function App() {
   return (
     <>
-    <div className="main bg-black w-full min-h-screen px-20 py-6 text-neutral-200 overflow-hidden relative">
+    <motion.div 
+    
+    className="main overflow-hidden bg-black w-full min-h-screen px-20 py-6 text-neutral-200  relative">
       <Navbar></Navbar>
 
-      <div className="landing h-screen w-full flex items-center justify-center">
+      <motion.div 
+      initial={{ opacity: 0, scale: 0.90 }}
+      animate={{}}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.6, delay: 0.2 }}  
+
+      className="landing h-screen w-full flex items-center justify-center">
         <Center></Center>
-      </div>
-      <div className="skill">
+      </motion.div>
+
+      <motion.div
+      initial={{ opacity: 0, x: -40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+
+      id='skills' className="skill">
         <Technologies></Technologies>
-      </div>
-      <div className="projects">
+      </motion.div>
+
+      <motion.div 
+      initial={{ opacity: 0, x: 40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      id='projects ' className="projects">
         <Projects></Projects>
-      </div>
-      <div className="experience">
+      </motion.div>
+      
+      <div>
         <Experiences></Experiences>
-    </div>
-    <div className="footer">
+      </div>
+
+
+      
+    <motion.div 
+    initial={{ opacity: 0, scale: 0.95 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.6, delay: 0.2 }} 
+    id='contact' className="footer">      
       <Footer></Footer>
-    </div>
-    </div>
+    </motion.div>
+    </motion.div>
     </>
   )
 }

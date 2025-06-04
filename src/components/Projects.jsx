@@ -1,4 +1,8 @@
 import React from 'react'
+import { easeInOut, motion } from 'motion/react'
+import { stagger } from 'motion'
+
+
 
 function Projects() {
     const data = [{
@@ -22,9 +26,18 @@ function Projects() {
 
     ]
   return (
-    <div className=' p-20'>  
+    <motion.div 
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, delay: 0.2}}
+    className=' p-20 projects '>  
         <h2 className="text-6xl font-bold text-center mb-20 ">Experience That I have <br /> Working On Some industry Grade Projects</h2>
-        <div className=" p-4 flex gap-4 flex-col">
+        <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2}}
+
+        className=" p-4 flex gap-4 flex-col">
             {data.map((project, index) => (
                 <ProjectCard 
                     key={index} 
@@ -34,8 +47,8 @@ function Projects() {
                     image={project.image} 
                 />
             ))}
-        </div>
-    </div>
+        </motion.div>
+    </motion.div>
   )
 }
 

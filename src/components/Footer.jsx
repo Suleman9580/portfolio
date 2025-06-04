@@ -9,7 +9,7 @@ function Footer() {
 
   return (
     <>
-    <div className='w-full flex flex-col items-center gap-20'>
+    <div id='contact' className='w-full flex flex-col items-center gap-20'>
 
 
     <div className=' [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)] w-full'>
