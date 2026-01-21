@@ -39,11 +39,34 @@ function Footer() {
     </div>
     <div className='w-[50%]'>
     <p className='text-center text-neutral-500'>
-      Send me your email to discuss new projects, collaborations, or just to say hello! I would love to hear from you.
+      Send me your email to discuss new projects, collaborations, or just to say hello! <br />I would love to hear from you.
     </p>
-    <form action="mailto:suleman.techworks@gmail.com">
-      <input type="email" placeholder='Enter Your Email' className=' px-6 mt-6 bg-neutral-900 border-0 p-2 rounded-full w-full' />
-    </form>
+
+
+    <form action="https://formspree.io/f/xblkvzlw" method="POST" className="space-y-4">
+  <input 
+    type="email" 
+    name="email" 
+    placeholder="Enter Your Email" 
+    className="px-6 mt-6 bg-neutral-900 border-0 p-2 rounded-full w-full" 
+    required 
+  />
+
+  <textarea 
+    name="message" 
+    placeholder="Enter Your Message" 
+    className="px-6 bg-neutral-900 border-0 p-2 rounded-xl w-full h-32" 
+    required
+  ></textarea>
+
+  <button 
+    type="submit" 
+    className="px-6 py-2 bg-neutral-100 text-neutral-800 rounded-lg shadow hover:bg-neutral-300 transition cursor-pointer"
+  >
+    Send Message
+  </button>
+</form>
+
 
     </div>
   </div>

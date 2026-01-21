@@ -2,10 +2,11 @@
 
 
 a {
-    color: rgb(120, 120, 120);
+    color: rgb(199, 199, 199);
+    font-weight: 400;
 }
 a:hover {
-    color: rgb(212 212 212);
+    color: rgb(255, 255, 255);
     transition: all 0.2s ease-in-out;
 }
 
